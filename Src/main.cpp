@@ -8,7 +8,7 @@
 
 float width = 600;
 float height = 600;
-unsigned int max_iter = 34; //Maximum number of iteration to check if the sequence converges
+unsigned int max_iter = 50; //Maximum number of iteration to check if the sequence converges
 
 int value (int x, int y){ //Evaluating the red component for each point
 
@@ -21,7 +21,7 @@ int value (int x, int y){ //Evaluating the red component for each point
     z = z * z + point;
     nb_iter++;
   }
-  if(nb_iter < 34) return (255 * nb_iter)/33;
+  if(nb_iter < max_iter) return (255 * nb_iter)/max_iter - 1;
   else return 0;
 }
 
