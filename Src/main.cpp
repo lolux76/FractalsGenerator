@@ -21,7 +21,7 @@ int value (int x, int y){ //Evaluating the red component for each point
     z = z * z + point;
     nb_iter++;
   }
-  if(nb_iter < 34) return 255;
+  if(nb_iter < 34) return (255 * nb_iter)/33;
   else return 0;
 }
 
